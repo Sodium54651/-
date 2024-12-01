@@ -1,0 +1,190 @@
+.main{
+    padding: 5% 5% 10% 5%;
+}
+
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    background-color: #345167;
+    border-radius: 25px 25px 0 0;
+    /* padding: 2px 25px 2px 25px; */
+    padding: 10px 5%;
+    align-items: center;
+    line-height: 45px;
+}
+
+.logo-plane{
+    border-radius: 10px;
+    background-color: bisque;
+    display: block;
+    width: 15%;
+    height: auto;
+}
+.logo-plane:hover{
+    animation: karhabar-karhabar 1s forwards;
+    /* animation-fill-mode:forwards */
+}
+
+@keyframes karhabar-karhabar{
+    from{transform: scale(1);}
+    to{transform: scale(1.1);}
+}
+
+@keyframes shine{
+    0%{width: 0px;}
+    1%{width: 20px;}
+    2%{width: 100px;}
+    3%{width: 300px;}
+}
+
+@keyframes make-grad{
+
+
+    0%{background: linear-gradient(45deg, rgb(253, 232, 205), white, rgb(253, 232, 205))}
+    5%{}
+    0% {background: linear-gradient(45deg, rgb(253, 232, 205), white, rgb(253, 232, 205));} 
+    1% {background: linear-gradient(46deg, rgb(253, 232, 205), white, rgb(253, 232, 205));} 
+    2% {background: linear-gradient(47deg, rgb(253, 232, 205), white, rgb(253, 232, 205));} 
+    3% {background: linear-gradient(48deg, rgb(253, 232, 205), white, rgb(253, 232, 205));} 
+    4% {background: linear-gradient(49deg, rgb(253, 232, 205), white, rgb(253, 232, 205));} 
+    5% {background: linear-gradient(50deg, rgb(253, 232, 205), white, rgb(253, 232, 205));} 
+    6% {background: linear-gradient(51deg, rgb(253, 232, 205), white, rgb(253, 232, 205));} 
+    7% {background: linear-gradient(52deg, rgb(253, 232, 205), white, rgb(253, 232, 205));} 
+    8% {background: linear-gradient(53deg, rgb(253, 232, 205), white, rgb(253, 232, 205));} 
+    9% {background: linear-gradient(54deg, rgb(253, 232, 205), white, rgb(253, 232, 205));} 
+    10% {background: linear-gradient(55deg, rgb(253, 232, 205), white, rgb(253, 232, 205));} 
+    20% {background: linear-gradient(65deg, rgb(253, 232, 205), white, rgb(253, 232, 205));} 
+    30% {background: linear-gradient(75deg, rgb(253, 232, 205), white, rgb(253, 232, 205));} 
+    40% {background: linear-gradient(85deg, rgb(253, 232, 205), white, rgb(253, 232, 205));} 
+    50% {background: linear-gradient(95deg, rgb(253, 232, 205), white, rgb(253, 232, 205));} 
+    60% {background: linear-gradient(105deg, rgb(253, 232, 205), white, rgb(253, 232, 205));} 
+    70% {background: linear-gradient(115deg, rgb(253, 232, 205), white, rgb(253, 232, 205));} 
+    80% {background: linear-gradient(125deg, rgb(253, 232, 205), white, rgb(253, 232, 205));} 
+    90% {background: linear-gradient(135deg, rgb(253, 232, 205), white, rgb(253, 232, 205));} 
+    100% {background: linear-gradient(145deg, rgb(253, 232, 205), white, rgb(253, 232, 205));} 
+}
+
+
+.nav-text{
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: white;
+    padding: 7px;
+    font-weight: 700;
+    border-radius: 10px;
+    height: 50%;
+    line-height: normal;
+}
+.flex{
+    display: flex;
+    align-items: center;
+}
+.nav-text:hover{
+    background-color: white;
+    color: black;
+    animation: karhabar-karhabar 1s forwards;
+}
+
+.main-path{
+    padding: 2%;
+    background-color: white;
+    border-radius: 0 0 10px 10px;
+}
+
+.main-elements{
+    display: flex;
+    justify-content: center;
+}
+
+.form{
+    display: flex;
+    justify-content: center;
+}
+
+.inputing-img{
+    padding-top: 15px;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.img-imp{
+    width: 35%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.first-one{
+    display: flex;
+    justify-content: center;
+    padding: 8px;
+    gap: 15px;
+}
+
+
+.first-in-one{
+    overflow: hidden;           /* делает так что бы не выходило за пределы */
+    background-color: antiquewhite;
+    border-radius: 25px;
+    width: 20%;
+    height: auto;
+    padding: 8px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 3px, 3px, 10px, blue;
+    /* font-weight: 700; */
+    
+}
+
+.first-in-one:hover{
+    animation: karhabar-karhabar 1s forwards;
+
+}
+
+.discribe{
+    font-size: smaller;
+}
+
+.make-it-right{
+    display: flex;
+    justify-content: right;
+}
+.bezopas{
+    width: 25%;
+    height: 25%;
+    transform: rotate(-20deg);
+    scale: 1.3;
+}
+
+
+
+
+.shine{
+    position: relative;
+    overflow: hidden;
+    border-radius: 30px;  /* скругление углов кнопки */
+}
+
+.shine::before {
+    content: '';
+    width: 20px; /* ширина блика */
+    height: 400px; /* высота блика */
+    position: absolute;
+    top: -50px; /* поднять выше относительно кнопки */
+    left: 50px; /* начальная позиция сдвига влево */
+    background-color: #fff; /* цвет блика */
+    transform: skewX(-30deg); /* угол наклона */
+    opacity: 0.4; /* непрозрачность блика */
+    filter: blur(4px); /* размытие */
+    animation-name: my_flash;
+    animation-duration: 4s; /* длительность анимации */
+    animation-iteration-count: infinite; /* бесконечное повторение */
+    animation-timing-function: linear; /* линейное движение */
+}
+
+
+/* код скопирован у "Не дизайнер на Тильда" я НН отлично это понимаю */
+@keyframes my_flash {
+    0% {transform: skewX(-30deg) translateX(0);}
+    30% {transform: skewX(-30deg) translateX(600px); /* дальность движения */}
+    100% {transform: skewX(-30deg) translateX(1200px); /* дальность движения */}
+}
